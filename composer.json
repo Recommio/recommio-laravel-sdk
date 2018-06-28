@@ -1,7 +1,7 @@
 {
     "name": "roboticsexpert/recommio",
     "description": "recommio laravel sdk",
-    "minimum-stability ": "dev",=
+    "minimum-stability ": "dev",
     "type": "library",
     "license": "MIT",
     "authors": [
