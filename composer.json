@@ -1,0 +1,28 @@
+{
+    "name": "roboticsexpert/recommio",
+    "description": "recommio laravel sdk",
+    "minimum-stability ": "dev",=
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahdi Youseftabar",
+            "email": "roboticsexpert@gmail.com"
+        }
+    ],
+    "require": {
+        "roboticsexpert/payment-gateways": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Roboticsexpert\\Recommio\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Roboticsexpert\\Recommio\\RecommioServiceProvider"
+            ]
+        }
+    }
+}
