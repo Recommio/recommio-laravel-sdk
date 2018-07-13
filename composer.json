@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "roboticsexpert/payment-gateways": "dev-master"
+        "guzzlehttp/guzzle": "~6.0"
     },
     "autoload": {
         "psr-4": {

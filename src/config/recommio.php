@@ -7,6 +7,6 @@
  */
 
 return [
-    'base_url' => env('RECOMMIO_URL', 'http://localhost:8000/api/universal/'),
-    'token' => env('RECOMMIO_TOKEN', 'http://localhost:8000/api/universal/'),
+    'base_url' => env('RECOMMIO_URL', 'https://recommio.com/api/universal/'),
+    'token' => env('RECOMMIO_TOKEN'),
 ];
