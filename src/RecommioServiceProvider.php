@@ -36,11 +36,22 @@ class RecommioServiceProvider extends ServiceProvider
                 throw new \UnexpectedValueException('you should fill token for recommio');
             return new Recommio(config('recommio.base_url'), config('recommio.token'));
         });
+
+        $this->app->singleton(RecommioGraph::class, function ($app) {
+            if (empty(config('recommio.base_url')))
+                throw new \UnexpectedValueException('you should fill base url for recommio');
+            if (empty(config('recommio.token')))
+                throw new \UnexpectedValueException('you should fill token for recommio');
+            return new RecommioGraph(config('recommio.base_url'), config('recommio.token'));
+        });
     }
 
     public function provides()
     {
-        return [Recommio::class];
+        return [
+            Recommio::class,
+            RecommioGraph::class
+        ];
     }
 
 }
